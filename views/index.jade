@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  body(ng-app="docApp")
+    div(ng-controller="UserCtrl" ng-model="user" validate)
+      ul
+        li
+          a(ng-click="login=false" class="aba" ng-class="(!login)? 'active': ''") Logar-se
+        li
+          a(ng-click="login=true" class="aba" ng-class="(login)? 'active': ''") Cadastre-se
+      form(ng-submit="submit()" ng-init="user = {}")
+        input(ng-model="user.name" type="text" name="name" placeholder="Name" ng-show="login")
+        input(ng-model="user.contact.email" type="text" name="email" placeholder="Email")
+        input(ng-model="user.authentication.ps" type="password" name="pass" placeholder="Password")
+        input(ng-model="user.repeatpass"  type="password" name="pass" placeholder="Confirm password" ng-show="login")
+        input(type="submit" value="Entrar" ng-disabled="")
+      ul.midias
+        li
+          a(class="icon-facebook")
+        li
+          a(class="icon-twitter")
+      a(href="" ng-click="test()") Auth test.

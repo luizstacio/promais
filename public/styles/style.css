@@ -1,0 +1,63 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+input:not([type=button]){
+  border: 1px solid #BFBFBF;
+  padding: 4px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+
+li:last-child .aba{
+  border-left: 0;
+}
+
+.aba {
+  cursor: pointer;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid #BFBFBF;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 10px 15px;
+  background: #F1F1F1;
+}
+.aba.active {
+  background: #FFFFFF;
+  box-shadow:inset 0px 0px 5px rgba(5, 5, 5, 0.1);
+}
+
+form {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.midias li a {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #00B7FF;
+  margin-right: 5px;
+}
+
+.midias li a:hover {
+  color: #FFFFFF;
+  background: #00B7FF;
+}
+
+.midias li a:active {
+  opacity: 0.6;
+}
+
+a {
+  color: #00B7FF;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "promais",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "description": "Plataforma de doações",
+  "main": "app.js",
+  "devDependencies": {
+    "express": "3.4.7",
+    "jade": "*",
+    "express-jwt":  "~0.1.0",
+    "jsonwebtoken": "~0.1.0"
+  },
+  "author": "luizstacio <luizstacio@gmail.com>",
+  "license": "MIT"
+}

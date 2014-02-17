@@ -1,0 +1,15 @@
+##############
+## Pastas
+##############
+
+key
+node_modules
+bower_components
+.git
+
+##############
+## Files
+##############
+
+gulpfile.js
+*.swp
